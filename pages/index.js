@@ -27,26 +27,26 @@ const heroImageVarient = {
 
 export default function Home() {
   return (
-    <div className=" text-white bg-black w-fit h-full lg:h-fit">
+    <div className=" text-white bg-black w-fit h-fit  lg:w-full">
       <Head>
         <title>NWC</title>
         <meta name="description" content="NWC department " />
         <link rel="icon" href="/nwc.png" />
       </Head>
       <Header textColor={"white"} />
-      <div className="  flex  px-36 py-20  md:py-8  lg:py-16   ">
+      <div className="  flex  px-auto   h-max  ">
         <motion.div
-          className="hero-image hidden lg:block my-auto"
+          className="hero-image hidden lg:block  mx-auto   my-auto"
           variants={heroImageVarient}
           initial="initial"
           animate="animate"
         >
-          <Image alt="homegif" src={home} width={1440} height={1440} />
+          <Image alt="homegif" src={home} width={1024} height={1024} />
         </motion.div>
-        <div className="hero-desc-container  py-28 xs:py-80  flex flex-col md:w-max items-start">
+        <div className="hero-desc-container ">
           <div className="font-extrabold flex flex-col items-start md:items-center md:w-full  mb-5">
             <motion.h1
-              className="font-extrabold text-[150px] md:text-[175px] lg:text-9xl mb-5 "
+              className="font-extrabold text-[150px] md:text-[175px] lg:text-[95px] mb-5 "
               initial={{
                 color: "white",
               }}
@@ -82,7 +82,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.h1
-              className="font-extrabold text-[175px]  lg:text-9xl mb-5 text-transparent  "
+              className="font-extrabold text-[175px]  lg:text-[95px] mb-5   "
               initial={{
                 color: "white",
               }}
@@ -117,7 +117,7 @@ export default function Home() {
               Association
             </motion.h1>
             <motion.h1
-              className="font-extrabold text-[150px] md:text-[175px] lg:text-9xl mb-5 text-transparent "
+              className="font-extrabold text-[150px] md:text-[175px] lg:text-[95px] mb-5 text-transparent "
               initial={{
                 color: "white",
               }}
@@ -157,7 +157,7 @@ export default function Home() {
             KTR.
           </h5>
 
-          <div className=" lg:mt-10 mx-auto lg:hidden">
+          <div className="flex justify-center lg:mt-10  border-8  lg:hidden">
             <Image alt="homegif" src={home} width={1024} height={1024} />
           </div>
           <div className="flex justify-center py-20 lg:justify-start  w-full ">

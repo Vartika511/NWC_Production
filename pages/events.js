@@ -182,26 +182,16 @@ export default function Events() {
         </section>
 
         <section className=" bg-black events  h-fit">
-          {/* <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
-          <span className="bg-black">Time Flies when </span>
-          <span className="bg-white text-black">you&apos;re having fun!</span>
-           
+        <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
+              Time Flies when you&apos;re having fun!
           </h1>
           <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
-          <span className="bg-black">Relax, unwind and explore </span>
-          <span className="bg-white text-black">fantastic shows from the past.</span>
+              Relax, unwind and explore fantastic shows from the past.  
+          </h5>
+          <div className="bg-black lg:grid lg:grid-cols-2 lg:gap-24  ">
+            <div className=" event-desc   p-7 h-fit">
+          
             
-          </h5> */}
-          <div className="bg-white lg:grid lg:grid-cols-2 lg:gap-24  ">
-            <div className="bg-black event-desc   p-7 h-fit">
-            <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
-          <span className="text-white">Time Flies when </span>
-             </h1>
-             <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
-             <span className="bg-black text-white">Relax, unwind and explore </span>
-             
-            
-             </h5>
               <h1 className=" font-bold text-5xl ">SRM IDEATHON </h1>
               <h1 className="text-2xl font-bold">22.01.2022</h1>
 
@@ -222,13 +212,6 @@ export default function Events() {
                   </h3>
                 </div>
                 <div className="bg-white event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
-                  <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
-          
-                    <span className="text-black">you&apos;re having fun!</span>
-                  </h1>
-                  <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
-                  <span className=" text-black">fantastic shows from the past.</span>
-                  </h5>
                   <Image
                     alt="event11"
                     src={event11}
@@ -250,11 +233,6 @@ export default function Events() {
               </div>
             </div>
             <div className=" hidden lg:block event-img lg:py-32 ">
-                <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
-          
-                    <span className="text-black">you&apos;re having fun!</span>
-                  </h1>
-
               <Image
                 alt="event11"
                 src={event11}

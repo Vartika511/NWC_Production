@@ -75,8 +75,12 @@ export default function MemberCard(props) {
         <motion.button
           className=" text-xs font-thin mb-6 mt-2 hover:text-base hover:font-extrabold"
           variants={cardDescChildVarient}
-        >
-          {knowmore}
+        > <Link href={knowmoreSrc}>
+              
+                 {knowmore}
+              
+           </Link>
+         
         </motion.button>
       </motion.div>
     </motion.div>

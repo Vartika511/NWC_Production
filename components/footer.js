@@ -6,7 +6,7 @@ import instagram from "../public/instagram.png"
 
 export default function Footer() {
   return (
-    <div className="footer w-full hidden  text-white bg-[#010D51] flex-col lg:block ">
+    <div className="footer w-full hidden  text-white  flex-col lg:block ">
         <div className="flex justify-around items-center">
 
         <div className="text-xl h-fit">

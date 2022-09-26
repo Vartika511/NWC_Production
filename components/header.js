@@ -5,7 +5,7 @@ export default function Header() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <div className="font-bold bg-no-repeat bg-cover bg-[url('/navbar2.png')] navbar flex justify-between lg:justify-evenly lg:items-center">
+    <div className="font-bold navbar flex justify-between lg:justify-evenly lg:items-center">
       <div className="logo pt-5 pb-1">
         <button>
           <Link href="/" >

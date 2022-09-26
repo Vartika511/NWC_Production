@@ -5,9 +5,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import { animate, motion } from "framer-motion";
 
-
 import home from "../public/home.png";
-
 
 const heroImageVarient = {
   initial: {
@@ -29,26 +27,26 @@ const heroImageVarient = {
 
 export default function Home() {
   return (
-    <div className=" text-white bg-black h-full w-fit lg:w-full pt-0">
+    <div className=" text-white bg-black w-fit h-full lg:h-fit">
       <Head>
         <title>NWC</title>
         <meta name="description" content="NWC department " />
         <link rel="icon" href="/nwc.png" />
       </Head>
       <Header textColor={"white"} />
-      <div className="  flex  px-36 h-screen  ">
+      <div className="  flex  px-36 py-20  md:py-8  lg:py-16   ">
         <motion.div
-          className="hero-image hidden lg:block"
+          className="hero-image hidden lg:block my-auto"
           variants={heroImageVarient}
           initial="initial"
           animate="animate"
         >
-          <Image alt="homegif" src={home} width={1024} height={1024} />
+          <Image alt="homegif" src={home} width={1440} height={1440} />
         </motion.div>
-        <div className="hero-desc-container py flex flex-col w-screen  items-start">
-          <div className="font-extrabold text-7xl mb-5">
+        <div className="hero-desc-container  py-28 xs:py-80  flex flex-col md:w-max items-start">
+          <div className="font-extrabold flex flex-col items-start md:items-center md:w-full  mb-5">
             <motion.h1
-              className="font-extrabold text-9xl mb-5 "
+              className="font-extrabold text-[150px] md:text-[175px] lg:text-9xl mb-5 "
               initial={{
                 color: "white",
               }}
@@ -84,7 +82,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.h1
-              className="font-extrabold text-9xl mb-5 text-transparent  "
+              className="font-extrabold text-[175px]  lg:text-9xl mb-5 text-transparent  "
               initial={{
                 color: "white",
               }}
@@ -119,7 +117,7 @@ export default function Home() {
               Association
             </motion.h1>
             <motion.h1
-              className="font-extrabold text-9xl mb-5 text-transparent "
+              className="font-extrabold text-[150px] md:text-[175px] lg:text-9xl mb-5 text-transparent "
               initial={{
                 color: "white",
               }}
@@ -154,25 +152,25 @@ export default function Home() {
               SRM KTR
             </motion.h1>
           </div>
-          <h5 className="font-extrabold text-xl  lg:mb-5">
+          <h5 className="font-extrabold text-4xl xs:text-5xl lg:mb-5">
             The official student association of the Department of NWC, SRM IST
             KTR.
           </h5>
 
           <div className=" lg:mt-10 mx-auto lg:hidden">
-            <Image alt="homegif" src={home} width={720} height={720} />
+            <Image alt="homegif" src={home} width={1024} height={1024} />
           </div>
-          <div className="flex justify-center  lg:justify-start  w-full ">
+          <div className="flex justify-center py-20 lg:justify-start  w-full ">
             <Link href="/notice">
-              <button className="bg-[#010D51] border-4 border-black font-bold mx-auto  text-xl mt-1 rounded-3xl w-44 h-12">
+              <button className="bg-[#010D51] border-4 border-black font-bold mx-auto  text-xl mt-1 rounded-3xl w-56 h-24">
                 Join Now!
               </button>
             </Link>
           </div>
         </div>
       </div>
-     
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }

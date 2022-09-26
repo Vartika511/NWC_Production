@@ -7,6 +7,13 @@ import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import { animate, motion } from "framer-motion";
 
+import upcoming from "../public/upcoming.png"
+import event11 from "../public/event11.PNG"
+import event12 from "../public/event12.PNG"
+import event13 from "../public/event13.PNG"
+
+
+
 const upcomingVarient = {
   initial: {
     opacity: 0,
@@ -147,7 +154,7 @@ export default function Events() {
             >
               <Image
                 alt="upcoming"
-                src="/upcoming.png"
+                src={upcoming}
                 width="500"
                 height="300"
               />
@@ -158,7 +165,7 @@ export default function Events() {
             >
               <Image
                 alt="upcoming"
-                src="/upcoming.png"
+                src={upcoming}
                 width="800"
                 height="450"
               />
@@ -205,7 +212,7 @@ export default function Events() {
                 <div className="event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
                   <Image
                     alt="event11"
-                    src="/event11.PNG"
+                    src={event11}
                     width="904"
                     height="508"
                   />
@@ -226,7 +233,7 @@ export default function Events() {
             <div className=" hidden lg:block event-img lg:py-32 ">
               <Image
                 alt="event11"
-                src="/event11.PNG"
+                src={event11}
                 width="547"
                 height="341"
               />
@@ -238,7 +245,7 @@ export default function Events() {
             <div className="hidden lg:block event-image py-32 ml-4">
               <Image
                 alt="event12"
-                src="/event12.PNG"
+                src={event12}
                 width="904"
                 height="508"
               />
@@ -274,7 +281,7 @@ export default function Events() {
                 <div className="event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
                   <Image
                     alt="event12"
-                    src="/event12.PNG"
+                    src={event12}
                     width="904"
                     height="508"
                   />
@@ -307,7 +314,7 @@ export default function Events() {
                 <div className="event-image  lg:hidden ">
                   <Image
                     alt="event13"
-                    src="/event13.PNG"
+                    src={event13}
                     width="904"
                     height="593"
                   />
@@ -330,7 +337,7 @@ export default function Events() {
             <div className="hidden lg:block event-image px-7 py-32  mr-6">
               <Image
                 alt="event13"
-                src="/event13.PNG"
+                src={event13}
                 width="904"
                 height="593"
               />

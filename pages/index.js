@@ -6,6 +6,12 @@ import Header from "../components/header";
 import MemberCard from "../components/membercard";
 import { animate, motion } from "framer-motion";
 
+import amrit from "../public/amrit.png"
+import arvindg from "../public/arvindg.png"
+import safamaam from "../public/safamaam.jpeg"
+import home from "../public/home.png"
+
+
 const heroImageVarient = {
   initial: {
     x: "-100vw",
@@ -54,7 +60,7 @@ export default function Home() {
           initial="initial"
           animate="animate"
         >
-          <Image alt="homegif" src="/home.png" width={1024} height={1024} />
+          <Image alt="homegif" src={home} width={1024} height={1024} />
         </motion.div>
         <motion.div
           className="hero-desc-container py-40 lg:py-24 flex flex-col w-screen  items-start"
@@ -82,7 +88,7 @@ export default function Home() {
             className=" lg:mt-10 mx-auto lg:hidden"
             variants={heroDescContainerChildComponents}
           >
-            <Image alt="homegif" src="/home.png" width={720} height={720} />
+            <Image alt="homegif" src={home} width={720} height={720} />
           </motion.div>
           <motion.div
             className="flex justify-center  lg:justify-start  w-full "
@@ -114,7 +120,7 @@ export default function Home() {
         <div className="flex flex-col justify-around items-center">
           <div className="md:mb-0 flex justify-center  flex-wrap">
             <MemberCard
-              src={"/safamaam.jpeg"}
+              src={safamaam}
               name={"Ms. M. Safa"}
               designation={"President"}
               desc={"Assistant Professor NWC SRM IST"}
@@ -125,7 +131,7 @@ export default function Home() {
           <div className="flex w-full justify-around flex-wrap items-center ">
             <div className="my-10 ">
               <MemberCard
-                src={"/arvindg.png"}
+                src={arvindg}
                 name={"Mr. Aravind G"}
                 designation={"Vice-President"}
                 desc={"CSE 4th year SRM IST"}
@@ -135,7 +141,7 @@ export default function Home() {
             </div>
             <div className="lg:my-10">
               <MemberCard
-                src={"/amrit.png"}
+                src={amrit}
                 name={"Mr. Armit Anand"}
                 designation={"Joint-Secretary"}
                 desc={"CSE 3rd year SRM IST"}

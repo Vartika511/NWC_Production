@@ -5,6 +5,11 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import emailjs from "@emailjs/browser";
 
+import contactPage from "../public/contactpage.png"
+
+
+
+
 export default function ContactUs() {
   const form = useRef();
   const sendMail = (event) => {
@@ -58,7 +63,7 @@ export default function ContactUs() {
               <div className="lg:hidden">
                 <Image
                   alt="contactpage"
-                  src="/contactpage.png"
+                  src={contactPage}
                   width="250"
                   height="200"
                 />
@@ -66,7 +71,7 @@ export default function ContactUs() {
               <div className="hidden lg:block">
                 <Image
                   alt="contactpage"
-                  src="/contactpage.png"
+                  src={contactPage}
                   width="102"
                   height="93"
                 />

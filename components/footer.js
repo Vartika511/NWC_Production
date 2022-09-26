@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import footer from "../public/footer.png"
+import instagram from "../public/instagram.png"
+
 export default function Footer() {
   return (
     <div className="footer w-full hidden  text-white bg-[#010D51] flex-col lg:block ">
@@ -30,7 +33,7 @@ export default function Footer() {
             <div className="flex justify-evenly">
            <button>
            <Link href="https://www.instagram.com/nwcsrmist/">
-               <Image alt="instagram" src="/instagram.png" height="32" width="32" />
+               <Image alt="instagram" src={instagram} height="32" width="32" />
            </Link>
            </button>
            
@@ -39,7 +42,7 @@ export default function Footer() {
         </div>
         <div className=" flex items-end text-xl">
             <div >
-            <Image alt="footer" src="/footer.png" width="156" height = "190" />
+            <Image alt="footer" src={footer} width="156" height = "190" />
             </div>
             
         </div>

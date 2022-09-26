@@ -211,7 +211,7 @@ export default function Events() {
                     Chandak Principal Engineer Coinswitch
                   </h3>
                 </div>
-                <div className="bg-white event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
+                <div className="bg-white  event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
                   <Image
                     alt="event11"
                     src={event11}
@@ -232,19 +232,23 @@ export default function Events() {
                 </p>
               </div>
             </div>
-            <div className=" hidden lg:block event-img lg:py-32 ">
+            <div className=" hidden lg:block bg-white  event-img lg:py-32 ">
+              <div className="flex justify-center">
+
               <Image
                 alt="event11"
                 src={event11}
                 width="547"
                 height="341"
               />
+              </div>
             </div>
           </div>
         </section>
-        <section className="bg-no-repeat bg-cover bg-[url('/homepae.png')] events h-fit ">
+        <section className="events h-fit ">
           <div className="bg-white lg:grid lg:grid-cols-2 lg:gap-24  ">
-            <div className="hidden lg:block event-image py-32 ml-4">
+    
+            <div className="hidden bg-white  lg:block event-image py-24 ml-4">
               <Image
                 alt="event12"
                 src={event12}
@@ -252,7 +256,7 @@ export default function Events() {
                 height="508"
               />
             </div>
-            <div className="bg-black event-desc  p-7 h-fit">
+            <div className="bg-black  event-desc  p-7 h-fit">
               <h1 className="font-extrabold text-5xl ">
                 <span className="font-extrabold text-2xl block mb-2 mt-5">
                   Webinar on
@@ -263,7 +267,7 @@ export default function Events() {
                   25.01.2022
                 </span>
               </h1>
-              <div className="event-details  h-full">
+              <div className="event-details  h-full xl:h-fit">
                 <div className="my-7">
                   <h3 className="font-extrabold text-2xl mb-1">
                     <span className="text-[#474747] font-extrabold text-2xl">
@@ -297,8 +301,8 @@ export default function Events() {
             </div>
           </div>
         </section>
-        <section className="bg-no-repeat bg-cover bg-[url('/homepae.png')] events h-fit ">
-          <div className="bg-black lg:grid lg:grid-cols-2 lg:gap-24  ">
+        <section className=" events h-fit ">
+          <div className="bg-black  lg:grid lg:grid-cols-2 lg:gap-24  ">
             <div className="event-desc  p-7 h-fit">
               <h1 className="font-extrabold text-5xl mt-4">
                 International Women&apos;s Day Celebration
@@ -336,13 +340,16 @@ export default function Events() {
                 </p>
               </div>
             </div>
-            <div className="bg-white hidden lg:block event-image px-7 py-32  mr-6">
+            <div className="bg-white">
+
+            <div className="bg-white z-10 hidden lg:block event-image px-7 py-32  mr-6">
               <Image
                 alt="event13"
                 src={event13}
-                width="904"
+                width="910"
                 height="593"
               />
+            </div>
             </div>
           </div>
         </section>

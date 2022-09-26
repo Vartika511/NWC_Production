@@ -157,7 +157,7 @@ export default function Home() {
             KTR.
           </h5>
 
-          <div className="flex justify-center lg:mt-10  border-8  lg:hidden">
+          <div className="flex justify-center lg:mt-10    lg:hidden">
             <Image alt="homegif" src={home} width={1024} height={1024} />
           </div>
           <div className="flex justify-center py-20 lg:justify-start  w-full ">

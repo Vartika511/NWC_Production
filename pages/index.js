@@ -44,7 +44,7 @@ export default function Home() {
           <Image alt="homegif" src={home} width={1024} height={1024} />
         </motion.div>
         <div className="hero-desc-container ">
-          <div className="font-extrabold flex flex-col items-start md:items-center md:w-full  mb-5">
+          <div className="font-extrabold flex flex-col items-start md:items-center lg:items-start md:w-full  mb-5">
             <motion.h1
               className="font-extrabold text-[150px] md:text-[175px] lg:text-[95px] mb-5 "
               initial={{

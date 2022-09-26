@@ -22,7 +22,7 @@ export default function Aboutus() {
         <meta name="description" content="About NWC Club " />
         <link rel="icon" href={nwc} />
       </Head>
-    <Header  bgColor={"white"} textColor={"black"}/>  
+    <Header textColor={"black"}/>  
       <div className=" flex flex-col  justify-evenly items-center w-full h-fit sm:h-screen lg:h-full    ">
         <div className="aboutus flex flex-col items-center lg:w-full px-10 text-black">
           <h1 className="text-6xl w-fit text-left pb-10 font-extrabold bg-gradient-to-r text-transparent bg-clip-text from-[#FF0066] to-[#6600FF] "> 
@@ -131,7 +131,7 @@ export default function Aboutus() {
       </div>
         <div className="board-members mx-auto w-screen bg-white text-black">
           <motion.h1
-          className="font-bold mb-20 text-left w-fit bg-white text-black pl-20 w-full text-5xl"
+          className="font-bold mb-20 text-left w-fit bg-white text-black pl-20  text-5xl"
           initial={{
             opacity: 0,
           }}
@@ -168,7 +168,7 @@ export default function Aboutus() {
             </div>
           </div>
         </div>
-      <Footer bgColor={"black"} textColor={"white"}/>
+      <Footer/>
    
     </div>
   );

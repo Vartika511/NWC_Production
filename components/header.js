@@ -4,7 +4,7 @@ import Link from "next/link";
 import nwc from "../public/nwc.png";
 export default function Header(props) {
   const [showSidebar, setShowSidebar] = useState(false);
-  const {bgColor,textColor} = props;
+  const {textColor} = props;
 
   return (
     <div className="font-bold navbar flex justify-between lg:justify-evenly lg:items-center">
@@ -72,7 +72,7 @@ export default function Header(props) {
           </div>
         </>
       </div>
-      <div className={`hidden w-full lg:block lg:flex  text-${textColor} text-3xl lg:justify-evenly lg:items-center`}>
+      <div className={`hidden w-full  lg:flex  text-${textColor} text-3xl lg:justify-evenly lg:items-center`}>
         <Link href="/">
           <button>
             <h3>Home</h3>

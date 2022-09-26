@@ -15,7 +15,7 @@ export default function Notice() {
         />
         <link rel="icon" href={nwc} />
       </Head>
-      <Header />
+      <Header textColor={"white"} />
       <div className="flex p-3  h-max xs:h-screen lg:h-screen md:py-10 lg:py-0 lg:mt-20 lg:px-36  ">
         <div className="bg-[#D9D9D9] h-max w-screen border-4 border-black rounded-xl p-7 md:h-fit md:my-44 lg:my-0  ">
           <h1 className="font-bold text-4xl text-center">N<span className="text-red-500">O</span>TI<span className="text-red-500">C</span>E  BO<span className="text-red-500">A</span>RD</h1>

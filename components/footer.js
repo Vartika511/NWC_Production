@@ -6,10 +6,10 @@ import instagram from "../public/instagram.png"
 
 
 
-export default function Footer(props) {
-    const {bgColor , textColor} = props;
+export default function Footer() {
+   
   return (
-    <div className={`footer w-full hidden bg-${bgColor} text-${textColor}  flex-col lg:block 1`}>
+    <div className={`footer w-full hidden bg-black text-white  flex-col lg:block `}>
         <div className="flex justify-around items-center">
 
         <div className="text-xl h-fit">

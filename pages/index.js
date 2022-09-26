@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="description" content="NWC department " />
         <link rel="icon" href={nwc} />
       </Head>
-      <Header bgColor={"black"} textColor={"white"} />
+      <Header textColor={"white"} />
       <div className="  flex  px-36 h-screen  ">
         <motion.div
           className="hero-image hidden lg:block"
@@ -175,7 +175,7 @@ export default function Home() {
         </div>
       </div>
      
-      <Footer bgColor={"black"} textColor={"white"}/>
+      <Footer/>
     </div>
   );
 }

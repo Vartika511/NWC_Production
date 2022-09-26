@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import {useRef } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import emailjs from "@emailjs/browser";
@@ -38,12 +38,12 @@ export default function ContactUs() {
         <meta name="description" content="Contact us " />
         <link rel="icon" href={nwc} />
       </Head>
-      <Header bgColor={"white"} textColor={"black"}/>
+      <Header textColor={"black"}/>
       <div className="mb-30 flex flex-col items-center  h-fit  md:w-screen mx-auto">
       <div>
         <h1 className="flex justify-center font-extrabold text-xl sm:text-7xl lg:text-5xl mb-10">  Contact Us</h1>
         </div>
-        <div className="form mx-auto  w-fit h-fit  xs:h-screen  w-screen flex flex-col lg:flex-row lg:justify-center">
+        <div className="form mx-auto   h-fit  xs:h-screen  w-screen flex flex-col lg:flex-row lg:justify-center">
           <div className="border-4 lg:border-y-4 lg:border-r-0 border-black  rounded-3xl lg:rounded-r-none  form-left bg-[#1B2A76]">
             <h2 className=" ml-10 mt-4 font-bold text-3xl sm:text-5xl mb-7 lg:text-2xl">
               Contact Information
@@ -119,7 +119,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <Footer bgColor={"black"} textColor={"white"}/>
+      <Footer/>
     </div>
   );
 }

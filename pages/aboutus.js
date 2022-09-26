@@ -3,6 +3,7 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import aboutus from "../public/aboutus.png"
+import nwc from "../public/nwc.png"
 
 export default function Aboutus() {
   return (
@@ -10,7 +11,7 @@ export default function Aboutus() {
       <Head>
         <title>About NWC</title>
         <meta name="description" content="About NWC Club " />
-        <link rel="icon" href="/nwc.png" />
+        <link rel="icon" href={nwc} />
       </Head>
     {<Header />}  
       <div className="py-12 w-full h-fit sm:h-screen lg:grid lg:grid-cols-3  ">

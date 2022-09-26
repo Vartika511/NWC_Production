@@ -4,9 +4,12 @@ import Link from "next/link";
 import footer from "../public/footer.png"
 import instagram from "../public/instagram.png"
 
-export default function Footer() {
+
+
+export default function Footer(props) {
+    const {bgColor , textColor} = props;
   return (
-    <div className="footer w-full hidden  text-white  flex-col lg:block ">
+    <div className={`footer w-full hidden bg-${bgColor} text-${textColor}  flex-col lg:block 1`}>
         <div className="flex justify-around items-center">
 
         <div className="text-xl h-fit">

@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="description" content="NWC department " />
         <link rel="icon" href={nwc} />
       </Head>
-      <Header />
+      <Header bgColor={"black"} textColor={"white"} />
       <div className="  flex  px-36 h-screen  ">
         <motion.div
           className="hero-image hidden lg:block"
@@ -174,57 +174,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="  board-members lg:border-b h-fit w-full ">
-        <motion.h1
-          className="font-bold mb-20 text-center text-7xl"
-          initial={{
-            opacity: 0,
-          }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 1 }}
-          transition={{
-            ease: "anticipate",
-            duration: 1,
-          }}
-        >
-          Board Members
-        </motion.h1>
-        <div className="flex flex-col justify-around items-center">
-          <div className="md:mb-0 flex justify-center  flex-wrap">
-            <MemberCard
-              src={safamaam}
-              name={"Ms. M. Safa"}
-              designation={"President"}
-              desc={"Assistant Professor NWC SRM IST"}
-              knowmore={"Know more"}
-              knowmoreSrc={"https://www.linkedin.com/in/safa-m-32417122b"}
-            />
-          </div>
-          <div className="flex w-full justify-around flex-wrap items-center ">
-            <div className="my-10 ">
-              <MemberCard
-                src={arvindg}
-                name={"Mr. Aravind G"}
-                designation={"Vice-President"}
-                desc={"CSE 4th year SRM IST"}
-                knowmore={"Know more"}
-                knowmoreSrc={"https://www.linkedin.com/in/safa-m-32417122b"}
-              />
-            </div>
-            <div className="lg:my-10">
-              <MemberCard
-                src={amrit}
-                name={"Mr. Armit Anand"}
-                designation={"Joint-Secretary"}
-                desc={"CSE 3rd year SRM IST"}
-                knowmore={"Know more"}
-                knowmoreSrc={"https://www.linkedin.com/in/anandamrit174"}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <Footer />
+     
+      <Footer bgColor={"black"} textColor={"white"}/>
     </div>
   );
 }

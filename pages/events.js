@@ -88,7 +88,7 @@ export default function Events() {
         <meta name="description" content="Events at NWC Club " />
         <link rel="icon" href={nwc} />
       </Head>
-      <Header />
+      <Header bgColor={"black"} textColor={"white"}/>
       <div className=" flex flex-col justify-around  ">
         {/*for all events
          we take image for two cases 
@@ -346,7 +346,7 @@ export default function Events() {
           </div>
         </section>
       </div>
-      <Footer />
+      <Footer bgColor={"black"} textColor={"white"}/>
     </div>
   );
 }

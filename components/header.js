@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-export default function Header() {
+import nwc from "../public/nwc.png";
+export default function Header(props) {
   const [showSidebar, setShowSidebar] = useState(false);
+  const {bgColor,textColor} = props;
 
   return (
     <div className="font-bold navbar flex justify-between lg:justify-evenly lg:items-center">
       <div className="logo pt-5 pb-1">
         <button>
           <Link href="/" >
-            <Image alt="nwc" src="/nwc.png" width={95} height={90} />
+            <Image alt="nwc" src={nwc} width={95} height={90} />
 
           </Link>
 
@@ -21,7 +23,7 @@ export default function Header() {
         <>
           {showSidebar ? (
             <button
-              className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
+              className={`flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50`}
               onClick={() => setShowSidebar(!showSidebar)}
             >
               x
@@ -30,7 +32,7 @@ export default function Header() {
             <svg
               onClick={() => setShowSidebar(!showSidebar)}
               className="z-30 flex items-center cursor-pointer right-10 top-6"
-              fill="#ffffff"
+              fill={textColor}
               viewBox="0 0 100 80"
               width="40"
               height="40"
@@ -42,7 +44,7 @@ export default function Header() {
           )}
 
           <div
-            className={`top-0 right-0 w-full bg-blue-600  p-10  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
+            className={`top-0 right-0 w-full bg-black  p-10  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
               }`}
           >
             <div className="w-max mx-auto mt-10 h-96 flex flex-col items-start justify-around text-5xl sm:text-6xl">
@@ -70,7 +72,7 @@ export default function Header() {
           </div>
         </>
       </div>
-      <div className=" hidden w-full lg:block lg:flex  text-white text-3xl lg:justify-evenly lg:items-center">
+      <div className={`hidden w-full lg:block lg:flex  text-${textColor} text-3xl lg:justify-evenly lg:items-center`}>
         <Link href="/">
           <button>
             <h3>Home</h3>

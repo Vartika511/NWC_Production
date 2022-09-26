@@ -32,13 +32,13 @@ export default function ContactUs() {
       );
   };
   return (
-    <div className="bg-no-repeat bg-cover bg-[url('/homepae.png')] flex flex-col w-max h-full md:w-full   text-white ">
+    <div className="bg-white flex flex-col w-max h-full md:w-full   text-black ">
       <Head>
         <title >Contact Us/NWC</title>
         <meta name="description" content="Contact us " />
         <link rel="icon" href={nwc} />
       </Head>
-      <Header />
+      <Header bgColor={"white"} textColor={"black"}/>
       <div className="mb-30 flex flex-col items-center  h-fit  md:w-screen mx-auto">
       <div>
         <h1 className="flex justify-center font-extrabold text-xl sm:text-7xl lg:text-5xl mb-10">  Contact Us</h1>
@@ -119,7 +119,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer bgColor={"black"} textColor={"white"}/>
     </div>
   );
 }

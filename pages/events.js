@@ -81,7 +81,7 @@ export default function Events() {
     );
   }, []);
   return (
-    <div className="bg-no-repeat bg-cover bg-[url('/homepae.png')] flex flex-col justify-around h-fit w-fit  text-white ">
+    <div className="bg-black flex flex-col justify-around h-fit w-fit  text-white ">
       <Head>
         <title>Events/NWC</title>
         <meta name="description" content="Events at NWC Club " />
@@ -98,7 +98,7 @@ export default function Events() {
          
          
          */}
-        <section className="bg-no-repeat bg-cover bg-[url('/homepae.png')] events-main-pg h-fit xs:h-screen flex flex-col justify-center md:justify-evenly lg:flex-row lg:justify-evenly lg:items-center">
+        <section className="bg-black events-main-pg h-fit xs:h-screen flex flex-col justify-center md:justify-evenly lg:flex-row lg:justify-evenly lg:items-center">
           <div className="left mb-40  text-center">
             <div className="justify-center flex items-center mb-10">
               <h1
@@ -181,15 +181,27 @@ export default function Events() {
           </motion.div>
         </section>
 
-        <section className=" bg-no-repeat bg-cover bg-[url('/homepae.png')] events  h-fit">
-          <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
-            Time Flies when you&apos;re having fun!
+        <section className=" bg-black events  h-fit">
+          {/* <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
+          <span className="bg-black">Time Flies when </span>
+          <span className="bg-white text-black">you&apos;re having fun!</span>
+           
           </h1>
           <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
-            Relax, unwind and explore fantastic shows from the past.
-          </h5>
-          <div className="lg:grid lg:grid-cols-2 lg:gap-24  ">
-            <div className="event-desc   p-7 h-fit">
+          <span className="bg-black">Relax, unwind and explore </span>
+          <span className="bg-white text-black">fantastic shows from the past.</span>
+            
+          </h5> */}
+          <div className="bg-white lg:grid lg:grid-cols-2 lg:gap-24  ">
+            <div className="bg-black event-desc   p-7 h-fit">
+            <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
+          <span className="text-white">Time Flies when </span>
+             </h1>
+             <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
+             <span className="bg-black text-white">Relax, unwind and explore </span>
+             
+            
+             </h5>
               <h1 className=" font-bold text-5xl ">SRM IDEATHON </h1>
               <h1 className="text-2xl font-bold">22.01.2022</h1>
 
@@ -209,7 +221,14 @@ export default function Events() {
                     Chandak Principal Engineer Coinswitch
                   </h3>
                 </div>
-                <div className="event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
+                <div className="bg-white event-image mx-auto w-fit lg:hidden lg:py-32 lg:ml-4">
+                  <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
+          
+                    <span className="text-black">you&apos;re having fun!</span>
+                  </h1>
+                  <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
+                  <span className=" text-black">fantastic shows from the past.</span>
+                  </h5>
                   <Image
                     alt="event11"
                     src={event11}
@@ -231,6 +250,11 @@ export default function Events() {
               </div>
             </div>
             <div className=" hidden lg:block event-img lg:py-32 ">
+                <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
+          
+                    <span className="text-black">you&apos;re having fun!</span>
+                  </h1>
+
               <Image
                 alt="event11"
                 src={event11}
@@ -241,7 +265,7 @@ export default function Events() {
           </div>
         </section>
         <section className="bg-no-repeat bg-cover bg-[url('/homepae.png')] events h-fit ">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-24  ">
+          <div className="bg-white lg:grid lg:grid-cols-2 lg:gap-24  ">
             <div className="hidden lg:block event-image py-32 ml-4">
               <Image
                 alt="event12"
@@ -250,7 +274,7 @@ export default function Events() {
                 height="508"
               />
             </div>
-            <div className="event-desc  p-7 h-fit">
+            <div className="bg-black event-desc  p-7 h-fit">
               <h1 className="font-extrabold text-5xl ">
                 <span className="font-extrabold text-2xl block mb-2 mt-5">
                   Webinar on
@@ -296,7 +320,7 @@ export default function Events() {
           </div>
         </section>
         <section className="bg-no-repeat bg-cover bg-[url('/homepae.png')] events h-fit ">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-24  ">
+          <div className="bg-black lg:grid lg:grid-cols-2 lg:gap-24  ">
             <div className="event-desc  p-7 h-fit">
               <h1 className="font-extrabold text-5xl mt-4">
                 International Women&apos;s Day Celebration
@@ -334,7 +358,7 @@ export default function Events() {
                 </p>
               </div>
             </div>
-            <div className="hidden lg:block event-image px-7 py-32  mr-6">
+            <div className="bg-white hidden lg:block event-image px-7 py-32  mr-6">
               <Image
                 alt="event13"
                 src={event13}

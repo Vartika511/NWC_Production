@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import nwc from "../public/nwc.png"
 
 export default function Notice() {
   return (
@@ -12,7 +13,7 @@ export default function Notice() {
           name="description"
           content="details for domains to join in NWC department"
         />
-        <link rel="icon" href="/nwc.png" />
+        <link rel="icon" href={nwc} />
       </Head>
       <Header />
       <div className="flex p-3  h-max xs:h-screen lg:h-screen md:py-10 lg:py-0 lg:mt-20 lg:px-36  ">

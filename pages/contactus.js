@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import emailjs from "@emailjs/browser";
-
+import nwc from "../public/nwc.png"
 import contactPage from "../public/contactpage.png"
 
 
@@ -36,7 +36,7 @@ export default function ContactUs() {
       <Head>
         <title >Contact Us/NWC</title>
         <meta name="description" content="Contact us " />
-        <link rel="icon" href="/nwc.png" />
+        <link rel="icon" href={nwc} />
       </Head>
       <Header />
       <div className="mb-30 flex flex-col items-center  h-fit  md:w-screen mx-auto">

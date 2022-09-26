@@ -10,7 +10,7 @@ import amrit from "../public/amrit.png"
 import arvindg from "../public/arvindg.png"
 import safamaam from "../public/safamaam.jpeg"
 import home from "../public/home.png"
-
+import nwc from "../public/nwc.png"
 
 const heroImageVarient = {
   initial: {
@@ -50,7 +50,7 @@ export default function Home() {
       <Head>
         <title>NWC</title>
         <meta name="description" content="NWC department " />
-        <link rel="icon" href="/nwc.png" />
+        <link rel="icon" href={nwc} />
       </Head>
       <Header />
       <div className="  flex py-2 px-36 h-fit xl:py-24 ">

@@ -11,6 +11,7 @@ import upcoming from "../public/upcoming.png"
 import event11 from "../public/event11.PNG"
 import event12 from "../public/event12.PNG"
 import event13 from "../public/event13.PNG"
+import nwc from "../public/nwc.png"
 
 
 
@@ -21,8 +22,8 @@ const upcomingVarient = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 0.5,
-      delay: 0.4,
+      duration: 0.4,
+      delay: 0.2,
       staggerChildren: 0.3,
     },
   },
@@ -36,11 +37,11 @@ const upcomingChildImageVarient = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.4,
+      delay: 0.2,
       ease: "easeInOut",
       type: "spring",
       stiffness: 120,
-      duration: 1.2,
+      duration: 0.8,
     },
   },
 };
@@ -56,7 +57,7 @@ const upcomingChildVarient = {
       ease: "easeInOut",
       type: "spring",
       stiffness: 120,
-      duration: 1.2,
+      duration: 0.8,
     },
   },
 };
@@ -71,13 +72,13 @@ export default function Events() {
   useEffect(() => {
     gsap.to(count, {
       value: 65,
-      duration: 1,
+      duration: 0.8,
       onUpdate: () => (counter.current.innerText = Math.round(count.value)),
     });
     gsap.fromTo(
       plus.current,
       { opacity: 0, x: -100 },
-      { opacity: 1, duration: 1.2, ease: "power2.out", x: 0 }
+      { opacity: 1, duration: 1, ease: "power2.out", x: 0 }
     );
   }, []);
   return (
@@ -85,7 +86,7 @@ export default function Events() {
       <Head>
         <title>Events/NWC</title>
         <meta name="description" content="Events at NWC Club " />
-        <link rel="icon" href="/nwc.png" />
+        <link rel="icon" href={nwc} />
       </Head>
       <Header />
       <div className=" flex flex-col justify-around  ">

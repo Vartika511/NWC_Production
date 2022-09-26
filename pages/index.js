@@ -3,14 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import MemberCard from "../components/membercard";
 import { animate, motion } from "framer-motion";
 
-import amrit from "../public/amrit.png";
-import arvindg from "../public/arvindg.png";
-import safamaam from "../public/safamaam.jpeg";
+
 import home from "../public/home.png";
-import nwc from "../public/nwc.png";
+
 
 const heroImageVarient = {
   initial: {
@@ -36,7 +33,7 @@ export default function Home() {
       <Head>
         <title>NWC</title>
         <meta name="description" content="NWC department " />
-        <link rel="icon" href={nwc} />
+        <link rel="icon" href="/nwc.png" />
       </Head>
       <Header textColor={"white"} />
       <div className="  flex  px-36 h-screen  ">

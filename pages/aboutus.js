@@ -9,7 +9,6 @@ import { animate, motion } from "framer-motion";
 import amrit from "../public/amrit.png";
 import arvindg from "../public/arvindg.png";
 import safamaam from "../public/safamaam.jpeg";
-import nwc from "../public/nwc.png"
 import vision from "../public/vision.png"
 import mission from "../public/mission.png"
 
@@ -20,7 +19,7 @@ export default function Aboutus() {
       <Head>
         <title>About NWC</title>
         <meta name="description" content="About NWC Club " />
-        <link rel="icon" href={nwc} />
+        <link rel="icon" href="/nwc.png" />
       </Head>
     <Header textColor={"black"}/>  
       <div className=" flex flex-col  justify-evenly items-center w-full h-fit sm:h-screen lg:h-full    ">

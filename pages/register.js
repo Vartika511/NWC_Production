@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import nwc from "../public/nwc.png"
+
 
 export default function Register() {
   return (
@@ -12,7 +12,7 @@ export default function Register() {
           name="description"
           content="registering for upcomming events at NWC"
         />
-        <link rel="icon" href={nwc} />
+        <link rel="icon" href="/nwc.png" />
       </Head>
       <Header textColor={"white"} />
       <div className="flex p-3 h-screen md:py-10  lg:py-20   lg:px-36 lg:my-auto ">

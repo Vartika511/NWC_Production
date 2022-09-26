@@ -11,7 +11,6 @@ import upcoming from "../public/upcoming.png"
 import event11 from "../public/event11.PNG"
 import event12 from "../public/event12.PNG"
 import event13 from "../public/event13.PNG"
-import nwc from "../public/nwc.png"
 
 
 
@@ -86,7 +85,7 @@ export default function Events() {
       <Head>
         <title>Events/NWC</title>
         <meta name="description" content="Events at NWC Club " />
-        <link rel="icon" href={nwc} />
+        <link rel="icon" href="/nwc.png" />
       </Head>
       <Header textColor={"white"}/>
       <div className=" flex flex-col justify-around  ">

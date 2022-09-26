@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const cardVarient = {
@@ -38,7 +39,7 @@ const cardDescChildVarient = {
 };
 
 export default function MemberCard(props) {
-  const { src, name, designation, desc, knowmore } = props;
+  const { src, name, designation, desc, knowmore,knowmoreSrc } = props;
   return (
     <motion.div
       className="h-84 w-80 m-7 rounded-xl flex flex-col justify-center items-center text-black bg-white border-2 border-black hover:bg-[#010D51] hover:text-white hover:border-white "

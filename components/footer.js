@@ -28,9 +28,13 @@ export default function Footer() {
         <div className="text-xl h-fit">
             <h1>Follow us</h1>
             <div className="flex justify-evenly">
-
-            <Image alt="facebook" src="/facebook.png" height="32" width="32" />
-            <Image alt="instagram" src="/instagram.png" height="32" width="32" />
+           <button>
+           <Link href="https://www.instagram.com/nwcsrmist/">
+               <Image alt="instagram" src="/instagram.png" height="32" width="32" />
+           </Link>
+           </button>
+           
+            
             </div>
         </div>
         <div className=" flex items-end text-xl">

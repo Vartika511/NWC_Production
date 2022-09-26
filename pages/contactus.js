@@ -27,23 +27,23 @@ export default function ContactUs() {
       );
   };
   return (
-    <div className="bg-no-repeat bg-cover bg-[url('/homepae.png')] flex flex-col justify-around h-full w-max xs:w-full md:h-screen lg:h-fit sm:w-screen    text-white ">
+    <div className="bg-no-repeat bg-cover bg-[url('/homepae.png')] flex flex-col w-max h-full md:w-full   text-white ">
       <Head>
         <title >Contact Us/NWC</title>
         <meta name="description" content="Contact us " />
         <link rel="icon" href="/nwc.png" />
       </Head>
       <Header />
-      <div className="mb-30 h-full my-5 w-fit  mx-auto">
+      <div className="mb-30 flex flex-col items-center  h-fit  md:w-screen mx-auto">
       <div>
         <h1 className="flex justify-center font-extrabold text-xl sm:text-7xl lg:text-5xl mb-10">  Contact Us</h1>
         </div>
-        <div className="form ml-5  h-fit flex flex-col lg:flex-row lg:justify-center">
-          <div className="border-y-4 border-l-4 border-black  rounded-3xl rounded-r-none  form-left bg-[#1B2A76]">
+        <div className="form mx-auto  w-fit h-fit  xs:h-screen  w-screen flex flex-col lg:flex-row lg:justify-center">
+          <div className="border-4 lg:border-y-4 lg:border-r-0 border-black  rounded-3xl lg:rounded-r-none  form-left bg-[#1B2A76]">
             <h2 className=" ml-10 mt-4 font-bold text-3xl sm:text-5xl mb-7 lg:text-2xl">
               Contact Information
             </h2>
-            <p className="  mr-6 ml-10 font-medium text-xs  sm:text-xl max-w-xs h-20 mb-7">
+            <p className="  mx-auto font-medium text-xs  sm:text-xl md:p-7 h-fit mb-7">
               Fill this form and our team will get back to you within 24 hours
             </p>
             <div className="ml-10 flex mb-5">
@@ -73,8 +73,8 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div className="border-y-4 border-r-4 border-black  rounded-3xl rounded-l-none  text-black bg-[#B8C2FF] form-right flex flex-col justify-center">
-            <form ref={form} onSubmit={sendMail}>
+          <div className="border-4 lg:border-y-4 lg:border-r-4 lg:border-l-0 border-black  rounded-3xl lg:rounded-l-none  text-black bg-[#B8C2FF] form-right flex flex-col justify-center">
+            <form ref={form} onSubmit={sendMail} className="flex flex-col items-center">
               <div className="ml-5 mr-5 text-black flex flex-col mb-5">
                 <label htmlFor="user_name">Full Name</label>
                 <input

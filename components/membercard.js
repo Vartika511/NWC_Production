@@ -19,7 +19,7 @@ const cardImageVarient = {
   animate: {
     y: 0,
     transition: {
-      duration: 1.5,
+      duration: 0.65,
       ease: "anticipate",
     },
   },
@@ -34,7 +34,7 @@ const cardDescChildVarient = {
     opacity: 1,
     transition: {
       ease: "anticipate",
-      duration: 2,
+      duration: 1.2,
     },
   },
 };
@@ -50,7 +50,7 @@ export default function MemberCard(props) {
       viewport={{ once: true, amount: 1 }}
       transition={{
         when: "beforeChildren",
-        staggerChildren: 0.6,
+        staggerChildren: 0.4,
       }}
     >
       <motion.div
@@ -68,7 +68,7 @@ export default function MemberCard(props) {
       <motion.div
         className="card-desc flex flex-col justify-center Description"
         transition={{
-          staggerChildren: 0.7,
+          staggerChildren: 0.3,
         }}
       >
         <motion.h1 variants={cardDescChildVarient}>{name}</motion.h1>

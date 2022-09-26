@@ -22,10 +22,10 @@ const heroImageVarient = {
     opacity: 1,
     transition: {
       ease: "anticipate",
-      delay: 2,
+      delay: 0.9,
       type: "spring",
       stiffness: 120,
-      duration: 2,
+      duration: 1.3,
     },
   },
 };
@@ -67,7 +67,7 @@ export default function Home() {
           initial="initial"
           animate="animate"
           transition={{
-            staggerChildren: 0.7,
+            staggerChildren: 0.3,
           }}
         >
           <motion.h1

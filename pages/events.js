@@ -22,8 +22,8 @@ const upcomingVarient = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      delay: 1,
-      staggerChildren: 0.7,
+      delay: 0.4,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -36,11 +36,11 @@ const upcomingChildImageVarient = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1.9,
+      delay: 0.4,
       ease: "easeInOut",
       type: "spring",
       stiffness: 120,
-      duration: 2,
+      duration: 1.2,
     },
   },
 };
@@ -56,7 +56,7 @@ const upcomingChildVarient = {
       ease: "easeInOut",
       type: "spring",
       stiffness: 120,
-      duration: 2,
+      duration: 1.2,
     },
   },
 };
@@ -77,7 +77,7 @@ export default function Events() {
     gsap.fromTo(
       plus.current,
       { opacity: 0, x: -100 },
-      { opacity: 1, duration: 1.5, ease: "power2.out", x: 0 }
+      { opacity: 1, duration: 1.2, ease: "power2.out", x: 0 }
     );
   }, []);
   return (
@@ -126,7 +126,7 @@ export default function Events() {
                 y: 0,
               }}
               transition={{
-                duration: 1.05,
+                duration: 0.8,
                 ease: "easeInOut",
                 delay: 0.1,
               }}

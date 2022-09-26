@@ -22,11 +22,11 @@ export default function Aboutus() {
           of the Computer Science Engineering branch under the umbrella of ‘<span className=" text-[#474747] ">School of Computing </span> ’.
           </p>
           <div className="flex justify-center lg:hidden">
-          <Image alt="aboutus" src="/aboutus.png" width="288" height="450"/>
+          <Image alt="aboutus" src={aboutus} width="288" height="450"/>
         </div>
         </div>
         <div className="hidden lg:block">
-          <Image alt="aboutus" src="/aboutus.png" width="450" height="650"/>
+          <Image alt="aboutus" src={aboutus} width="450" height="650"/>
         </div>
         
       </div>

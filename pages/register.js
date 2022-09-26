@@ -5,7 +5,7 @@ import Header from "../components/header";
 
 export default function Register() {
   return (
-    <div className="bg-no-repeat bg-cover bg-[url('/homepae.png')] h-fit  lg:h-full xl:h-fit w-fit  lg:w-full">
+    <div className="bg-white h-fit  lg:h-full xl:h-fit w-fit  lg:w-full">
       <Head>
         <title>Event Registration/NWC</title>
         <meta
@@ -14,7 +14,7 @@ export default function Register() {
         />
         <link rel="icon" href="/nwc.png" />
       </Head>
-      <Header textColor={"white"} />
+      <Header textColor={"black"} />
       <div className="flex p-3 h-screen md:py-10  lg:py-20   lg:px-36 lg:my-auto ">
         <div className="bg-[#D9D9D9] md:h-fit md:my-44 lg:my-0 w-screen border-4 border-black rounded-xl p-7">
           <h1 className="text-4xl text-center">REGISTER FOR EVENT</h1>

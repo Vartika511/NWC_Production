@@ -63,34 +63,12 @@ export default function Aboutus() {
       </div>
       <div className="faculty-members bg-black border-8 border-black  h-fit w-fit sm:w-full ">
 
-        <motion.h1
-          className="font-bold mb-20 text-center text-9xl bg-gradient-to-r text-transparent bg-clip-text from-[#3494E6] to-[#EC6EAD]"
-          initial={{
-            opacity: 0,
-          }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 1 }}
-          transition={{
-            ease: "anticipate",
-            duration: 1,
-          }}
-        >
+        <h1 className="font-bold mb-20 text-center text-9xl bg-gradient-to-r text-transparent bg-clip-text from-[#3494E6] to-[#EC6EAD]" >
           Our Team
-        </motion.h1>
-        <motion.h1
-          className="font-bold mb-20 text-left text-white pl-20 text-5xl"
-          initial={{
-            opacity: 0,
-          }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 1 }}
-          transition={{
-            ease: "anticipate",
-            duration: 1,
-          }}
-        >
+        </h1>
+        <h1 className="font-bold mb-20 text-left text-white pl-20 text-5xl">
           Faculty Members
-        </motion.h1>
+        </h1>
         <div className="flex flex-col justify-around ">
           {/* Faculty members */}
           <div className="mt-10 md:my-10    w-full flex justify-around flex-wrap">
@@ -129,20 +107,9 @@ export default function Aboutus() {
 
       </div>
         <div className="board-members mx-auto w-screen bg-white text-black">
-          <motion.h1
-          className="font-bold mb-20 text-left w-fit bg-white text-black pl-20  text-5xl"
-          initial={{
-            opacity: 0,
-          }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 1 }}
-          transition={{
-            ease: "anticipate",
-            duration: 1,
-          }}
-        >
+          <h1 className="font-bold mb-20 text-left w-fit bg-white text-black pl-20  text-5xl" >
           Board Members
-        </motion.h1>
+        </h1>
           <div className="flex  w-fit md:w-full justify-around flex-wrap items-center ">
          
             <div className="my-10 w-fit md:w-min">

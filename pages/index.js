@@ -119,6 +119,7 @@ export default function Home() {
               designation={"President"}
               desc={"Assistant Professor NWC SRM IST"}
               knowmore={"Know more"}
+              knowmoreSrc={"https://www.linkedin.com/in/safa-m-32417122b"}
             />
           </div>
           <div className="flex w-full justify-around flex-wrap items-center ">
@@ -129,6 +130,7 @@ export default function Home() {
                 designation={"Vice-President"}
                 desc={"CSE 4th year SRM IST"}
                 knowmore={"Know more"}
+                knowmoreSrc={"https://www.linkedin.com/in/safa-m-32417122b"}
               />
             </div>
             <div className="lg:my-10">
@@ -138,6 +140,7 @@ export default function Home() {
                 designation={"Joint-Secretary"}
                 desc={"CSE 3rd year SRM IST"}
                 knowmore={"Know more"}
+                knowmoreSrc={"https://www.linkedin.com/in/anandamrit174"}
               />
             </div>
           </div>

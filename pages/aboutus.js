@@ -5,7 +5,6 @@ import Header from "../components/header";
 
 
 import MemberCard from "../components/membercard";
-import { animate, motion } from "framer-motion";
 import amrit from "../public/amrit.png";
 import arvindg from "../public/arvindg.png";
 import safamaam from "../public/safamaam.jpeg";
@@ -107,9 +106,7 @@ export default function Aboutus() {
 
       </div>
         <div className="board-members mx-auto w-screen bg-white text-black">
-          <h1 className="font-bold mb-20 text-left w-fit bg-white text-black pl-20  text-5xl" >
-          Board Members
-        </h1>
+          <h1 className="font-bold mb-20 text-left w-fit bg-white text-black pl-20  text-5xl">Board Members</h1>
           <div className="flex  w-fit md:w-full justify-around flex-wrap items-center ">
          
             <div className="my-10 w-fit md:w-min">

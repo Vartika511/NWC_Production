@@ -48,7 +48,7 @@ export default function Aboutus() {
             <div className="vision-desc  mr-4 w-48">
               <h2 className="text-2xl font-semibold">VISION</h2>
               <p className="text-left font-light">
-                The vision of NWC is to cultivate morally upright pupils using a variety of teaching methods to show off their overall development.The department is headed by Ms. Safa, a very capable president, and its faculty members are academically and industrially solid.
+                The vision of NWC is to cultivate morally upright pupils using a variety of teaching methods to show off their overall development. The department,headed by Ms. Safa, president and its faculty members are academically and industrially solid.
               </p>
             </div>
           </div>

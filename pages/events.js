@@ -87,7 +87,7 @@ export default function Events() {
         <meta name="description" content="Events at NWC Club " />
         <link rel="icon" href="/nwc.png" />
       </Head>
-      <Header textColor={"white"}/>
+      <Header textColor={"white"} />
       <div className=" flex flex-col justify-around  ">
         {/*for all events
          we take image for two cases 
@@ -170,28 +170,39 @@ export default function Events() {
                 height="450"
               />
             </motion.div>
-            <motion.button
-              className="bg-[#010D51] rounded-2xl w-40 h-10 mt-4  border-4 border-black"
-              variants={upcomingChildVarient}
-            >
-              <Link href="/register">
+
+              {/* <Link href="/register">
                 <span className=" font-bold text-xl"> Register Now </span>
-              </Link>
-            </motion.button>
+              </Link> */}
+              {/* <div class="absolute  -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div> */}
+              <div class="grid gap-8 items-start justify-center mt-10">
+                <motion.div class="relative group"
+                variants={upcomingChildVarient}
+                >
+                  <motion.div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></motion.div>
+                  <button class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
+
+                    <Link href="/register" >
+                      Register Now &rarr;
+                    </Link>
+
+                  </button>
+                </motion.div>
+              </div>
           </motion.div>
         </section>
 
         <section className=" bg-black events  h-fit">
-        <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
-              Time Flies when you&apos;re having fun!
+          <h1 className="font-bold text-center mt-4 mb-5 text-7xl">
+            Time Flies when you&apos;re having fun!
           </h1>
           <h5 className="font-bold text-center mt-4 mb-5 text-4xl">
-              Relax, unwind and explore fantastic shows from the past.  
+            Relax, unwind and explore fantastic shows from the past.
           </h5>
           <div className="bg-black lg:grid lg:grid-cols-2 lg:gap-24  ">
             <div className=" event-desc   p-7 h-fit">
-          
-            
+
+
               <h1 className=" font-bold text-5xl ">SRM IDEATHON </h1>
               <h1 className="text-2xl font-bold">22.01.2022</h1>
 
@@ -235,19 +246,19 @@ export default function Events() {
             <div className=" hidden lg:block bg-white  event-img lg:py-32 ">
               <div className="flex justify-center">
 
-              <Image
-                alt="event11"
-                src={event11}
-                width="547"
-                height="341"
-              />
+                <Image
+                  alt="event11"
+                  src={event11}
+                  width="547"
+                  height="341"
+                />
               </div>
             </div>
           </div>
         </section>
         <section className="events h-fit ">
           <div className="bg-white lg:grid lg:grid-cols-2 lg:gap-24  ">
-    
+
             <div className="hidden bg-white  lg:block event-image py-24 ml-4">
               <Image
                 alt="event12"
@@ -342,14 +353,14 @@ export default function Events() {
             </div>
             <div className="bg-white">
 
-            <div className="bg-white z-10 hidden lg:block event-image px-7 py-32  mr-6">
-              <Image
-                alt="event13"
-                src={event13}
-                width="910"
-                height="593"
-              />
-            </div>
+              <div className="bg-white z-10 hidden lg:block event-image px-7 py-32  mr-6">
+                <Image
+                  alt="event13"
+                  src={event13}
+                  width="910"
+                  height="593"
+                />
+              </div>
             </div>
           </div>
         </section>

@@ -84,7 +84,7 @@ export default function ContactUs() {
                 <input
                   type="text"
                   name="user_name"
-                  className="rounded-md w-96 text-black "
+                  className="rounded-md w-80 text-black "
                   required
                 ></input>
               </div>
@@ -93,7 +93,7 @@ export default function ContactUs() {
                 <input
                   type="text"
                   name="user_email"
-                  className="rounded-md w-96 text-black"
+                  className="rounded-md w-80 text-black"
                   required
                 ></input>
               </div>
@@ -102,17 +102,17 @@ export default function ContactUs() {
                 <textarea
                   type="text"
                   name="message"
-                  className="rounded-md w-96 text-black"
+                  className="rounded-md w-80 text-black"
                   required
                 />
               </div>
               <div className=" text-white flex flex-col mb-10">
-                <button
-                  type="submit"
-                  className="bg-black border-4 border-black font-bold mx-auto  text-xl mt-1 rounded-3xl w-44 h-12"
-                >
-                  Submit
-                </button>
+              <div class="grid gap-8 items-start justify-center mt-10 xl:mt-0">
+    <div class="relative group">
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+      <button class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600"> Submit  </button>
+    </div>
+              </div>
               </div>
             </form>
           </div>

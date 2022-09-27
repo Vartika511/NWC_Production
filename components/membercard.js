@@ -43,7 +43,7 @@ export default function MemberCard(props) {
   const { src, name, designation, desc, knowmore,knowmoreSrc } = props;
   return (
     <motion.div
-      className="h-84 w-80 m-7 rounded-xl flex flex-col justify-center items-center text-black bg-white border-2 border-black hover:bg-[#010D51] hover:text-white hover:border-white "
+      className="h-84 w-80 m-7 rounded-xl flex flex-col justify-center items-center text-black bg-white border-2 border-black hover:bg-gradient-to-r from-[#141E30] to-[#243B55]  hover:text-white hover:border-white "
       initial="initial"
       whileInView={"animate"}
       variants={cardVarient}

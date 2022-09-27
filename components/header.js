@@ -44,10 +44,10 @@ export default function Header(props) {
           )}
 
           <div
-            className={`top-0 right-0 w-full bg-black  p-10  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
+            className={` top-0 right-0 w-full bg-black  p-10  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
               }`}
           >
-            <div className="w-max mx-auto mt-10 h-96 flex flex-col items-start justify-around text-5xl sm:text-6xl">
+            <div className="w-max mx-auto mt-10 h-96 flex flex-col items-start justify-around text-xl sm:text-4xl ">
               <Link href="/">
                 <button>
                   <h3>Home</h3>
@@ -73,24 +73,24 @@ export default function Header(props) {
         </>
       </div>
       <div className={`hidden w-full  lg:flex  text-${textColor} text-3xl lg:justify-evenly lg:items-center`}>
-        <Link href="/">
-          <button>
-            <h3>Home</h3>
+        <a href="/" className="hover:underline-offset-4">
+          <button className="">
+            <h3 className="hover:underline hover:text-[#00c3ff]">Home</h3>
           </button>
-        </Link>
-        <Link href="/aboutus">
+        </a>
+        <Link href="/aboutus" >
           <button>
-            <h3>About Us</h3>
+            <h3 className="hover:underline hover:text-[#00c3ff]">About Us</h3>
           </button>
         </Link>
         <Link href="/events">
           <button>
-            <h3 className="">Events</h3>
+            <h3 className="hover:underline hover:text-[#00c3ff]">Events</h3>
           </button>
         </Link>
         <Link href="/contactus">
           <button>
-            <h3>Contact Us</h3>
+            <h3 className="hover:underline hover:text-[#00c3ff]">Contact Us</h3>
           </button>
         </Link>
       </div>

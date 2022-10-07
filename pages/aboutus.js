@@ -12,6 +12,9 @@ import supraja from "../public/supraja.jpg";
 import sam from "../public/sam.jpg"
 import vision from "../public/vision.png"
 import mission from "../public/mission.png"
+import vartika from "../public/vartika.png";
+import yash from "../public/yash.png";
+
 
 
 export default function Aboutus() {
@@ -148,6 +151,32 @@ export default function Aboutus() {
               desc={"CSE 3rd year SRM IST"}
               knowmore={"Know more"}
               knowmoreSrc={"https://www.linkedin.com/in/anandamrit174"}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-gradient-to-r from-[#C9D6FF] to-[#E2E2E2] board-members mx-auto w-screen bg-white text-black">
+        <h1 className="bg-[#C9D6FF] bg-gradient-to-r text-transparent bg-clip-text from-[#000000] to-[#434343] font-bold mt-10 mb-20 text-left w-fit  text-black pl-20  text-5xl">Website Developers</h1>
+        <div className="flex  w-fit md:w-full justify-around flex-wrap items-center ">
+
+          <div className="my-10 w-fit md:w-min">
+            <MemberCard
+              src={yash}
+              name={"Yash Kishore Parwani"}
+              designation={"Front End Developer"}
+              desc={"CSE 3rd Year"}
+              knowmore={"Know more"}
+              knowmoreSrc={"https://www.linkedin.com/in/yash-parwani-5610/"}
+            />
+          </div>
+          <div className="lg:my-10 w-fit md:w-min">
+            <MemberCard
+              src={vartika}
+              name={"Vartika Yaduvanshi"}
+              designation={"UI"}
+              desc={"CSE 3rd year SRM IST"}
+              knowmore={"Know more"}
+              knowmoreSrc={"https://in.linkedin.com/in/vartika-yaduvanshi"}
             />
           </div>
         </div>
